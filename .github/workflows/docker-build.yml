@@ -24,8 +24,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/${{ github.actor }}/markdownify:latest .
+      run: docker build -t ghcr.io/${{ github.actor }}/markdownify:latest ./src
 
     - name: Push Docker image
-      run: |
-        docker push ghcr.io/${{ github.actor }}/markdownify:latest
+      run: docker push ghcr.io/${{ github.actor }}/markdownify:latest
