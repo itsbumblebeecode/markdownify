@@ -10,9 +10,3 @@ updates:
     directory: "/src"
     schedule:
       interval: "daily"
-
-  - package-ecosystem: "go"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    versioning-strategy: increase
